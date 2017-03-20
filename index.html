@@ -147,126 +147,38 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <section class="content">
 
       <div class="row">
-        <div class="col-md-5">
-              <!-- USERS LIST -->
-              <div class="box box-danger">
-                <div class="box-header with-border">
-                  <h3 class="box-title">Users
-                  </h3>
+        <div class="col-md-4">
 
-                  <div class="box-tools pull-right">
-                    <span class="label label-success">Online</span>
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body no-padding">
-                  <ul class="users-list clearfix">
-                    <li>
-                      <img src="dist/img/user1-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Alexander Pierce</a>
-                      <span class="users-list-date">Today</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/user8-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Norman</a>
-                      <span class="users-list-date">Yesterday</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/user7-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Jane</a>
-                      <span class="users-list-date">12 Jan</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/user6-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">John</a>
-                      <span class="users-list-date">12 Jan</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/user2-160x160.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Alexander</a>
-                      <span class="users-list-date">13 Jan</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/user5-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Sarah</a>
-                      <span class="users-list-date">14 Jan</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/user4-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Nora</a>
-                      <span class="users-list-date">15 Jan</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/user3-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Nadia</a>
-                      <span class="users-list-date">15 Jan</span>
-                    </li>
-                  </ul>
-                  <!-- /.users-list -->
-                </div>
-                <!-- /.box-body -->
-                <div class="box-footer text-center">
-                  <a href="javascript:void(0)" class="uppercase">View All Users</a>
-                </div>
-                <!-- /.box-footer -->
-              </div>
-              <!--/.box -->
-            </div>
-            <!-- /.col -->
-            <div class="col-md-3">
-              <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Top Journals</h3>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
-              <table class="table table-striped">
-                <tr>
-                  <th style="width: 10px">No</th>
-                  <th style="width: 55px">Journal ID</th>
-                  <th></th>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>536d30874326e55f2a22816f</td>
-                  <td>
-                    
-                  </td>
-                  <td><span class="badge bg-light-blue">Edit</span></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>f3fd30f74sa26e5f2ag28f6f</td>
-                  <td>
-                    
-                  </td>
-                  <td><span class="badge bg-light-blue">Edit</span></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>d3fd30f74sa26e5f2ag28f6f</td>
-                  <td>
-                    
-                  </td>
-                  <td><span class="badge bg-light-blue">Edit</span></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>h3fd30f74sa26e5f2ag28f6f</td>
-                  <td>
-                   
-                  </td>
-                  <td><span class="badge bg-light-blue">Edit</span></td>
-                </tr>
-              </table>
+          <!-- Profile Image -->
+          <div class="box box-primary">
+            <div class="box-body box-profile">
+              <img class="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
+
+              <h3 class="profile-username text-center" id="name">User Name</h3>
+              <p class="text-muted text-center" id="userID">_id</p>
+
+              <ul class="list-group list-group-unbordered">
+                <li class="list-group-item">
+                  <b>Private Journal</b> <a class="pull-right" id="privateJ">id</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Shared Journal</b> <a class="pull-right" id="sharedJ">id</a>
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn-primary btn-block" id="getUser"><b>Get User Info</b></a>
             </div>
             <!-- /.box-body -->
           </div>
-            </div>
+          <!-- /.box -->
+
+          <!-- About Me Box -->
+         
+          <!-- /.box -->
+        </div>  
+            <!-- /.col -->
+          
+             </div>
             
               </div>
               <!-- /.row -->
@@ -386,6 +298,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="dist/js/pages/dashboard2.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+
+
+<script type="text/javascript">
+$("#getUser").click(function(){
+$.getJSON( "http://rajeevkr.me/sugarizer/api/users/58ce5c7d7afe516c5ddb867c", function( json ) {
+  var name = json.name;
+  var userID = json._id;
+  var privateJournal = json.private_journal;
+  var sharedJournal = json.shared_journal;
+  $("#name").html(name);
+  $("#privateJ").html(privateJournal);
+  $("#sharedJ").html(sharedJournal);
+  $("#userID").html(userID);
+ });
+});
+</script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
